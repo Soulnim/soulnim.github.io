@@ -276,3 +276,323 @@ b {
   top: 400px;
   font-size: 14px;
 }
+
+@media only screen and (max-width: 600px) {
+  html {
+      scroll-behavior: smooth;
+    }
+  
+    body {
+      background-color: black;
+      color: cyan;
+      height: fit-content;
+      margin: 0;
+      padding: 0;
+    }
+  
+    /* header */
+  
+    #navbar {
+      background-color: #0d2e40;
+      /* Black background color */
+      position: fixed;
+      /* Make it stick/fixed */
+      top: 0;
+      /* Stay on top */
+      width: 100%;
+      /* Full width */
+      transition: top 0.3s;
+      /* Transition effect when sliding down (and up) */
+    }
+  
+    nav {
+      position: absolute;
+      top: 13px;
+      right: 10px;
+    }
+  
+    /* content's grid */
+    .container {
+      display: grid;
+      grid-template-columns: 15% 70% 15%;
+      height: 3000px;
+      margin: 0;
+    }
+  
+    /* first grid */
+    .first-grid {
+      background-color: #041729;
+      text-align: center;
+    }
+  
+    .second-grid {
+      background-color: #041729;
+    }
+  
+    .third-grid {
+      background-color: #041729;
+    }
+  
+    .a-nav,
+    .a-button {
+      margin: 15px;
+      font-size: 15px;
+      font-family: monospace;
+    }
+  
+    .icon {
+      position: relative;
+      left: 40px;
+      border: 1px solid white;
+      width: 8%;
+      text-align: center;
+      border-radius: 40px;
+    }
+  
+    #myname {
+      color: white;
+      font-family: sans-serif;
+      position: relative;
+      text-align: center;
+      top: 100px;
+      font-size: 55px;
+    }
+  
+    #desc {
+      text-align: center;
+      font-family: monospace;
+      font-size: 22px;
+      position: relative;
+      top: 100px;
+      line-height: 40px;
+    }
+  
+    #about-me {
+      text-align: center;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+      position: relative;
+      top: 100px;
+      height: 50px;
+      width: 40%;
+      color: aqua;
+      background-color: #041729;
+      border: 1px solid aqua;
+      border-radius: 5px;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+  
+    #about-me:hover {
+      color: aqua;
+      background-color: #0d2e40;
+    }
+  
+    #line {
+      line-height: 0;
+      position: fixed;
+      bottom: 0;
+      left: 27px;
+      color: white;
+    }
+  
+    #social {
+      position: fixed;
+      bottom: 110px;
+      left: 15px;
+      line-height: 10px;
+      font-size: 25px;
+      color: white;
+    }
+  
+    i:hover {
+      color: aqua;
+    }
+  
+    i {
+      transition: 0.3s;
+    }
+  
+    #intro {
+      height: 768px;
+    }
+  
+    #aboutme {
+      height: 1550px;
+      text-align: center;
+    }
+  
+    a {
+      color: aqua;
+      text-decoration: none;
+    }
+  
+    #aboutmeheader {
+      text-align: center;
+      border-bottom: 1px solid white;
+      width: 40%;
+      margin: auto;
+      padding: 10px;
+      padding-top: 100px;
+      font-family: sans-serif;
+    }
+  
+    #aboutmedesc {
+      font-size: 20px;
+      text-align: center;
+      margin: auto;
+      padding-top: 30px;
+      color: white;
+      font-family: monospace;
+    }
+  
+    #aboutme-grid {
+      text-align: center;
+      display: block;
+      grid-template-columns: 70% 30%;
+    }
+  
+    #abt-grid-1 {
+      border-right: 0;
+      height: 450px;
+      margin-top: 50px;
+    }
+  
+    #abt-grid-2 {
+      text-align: center;
+      height: 450px;
+      margin-top: 400px;
+      padding-left: 50px;
+    }
+  
+    #first-desc,
+    #second-desc,
+    #third-desc {
+      font-size: 21px;
+      font-family: sans-serif;
+      padding: 5px;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  
+    #first-desc-intro {
+      font-size: 32px;
+      color: white;
+      font-family: sans-serif;
+      padding-left: 0;
+    }
+  
+    #second-desc-intro {
+      font-size: 32px;
+      color: white;
+      font-family: sans-serif;
+      padding-left: 0;
+      text-align: center;
+      position: relative;
+        right: 20px;
+    }
+  
+    #skills {
+      color: aqua;
+      border: 1px solid aqua;
+      width: 80%;
+      height: 40px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 25px;
+      text-align: center;
+      border-radius: 5px;
+      padding: 5px;
+      padding-top: 13px;
+      font-family: monospace;
+    }
+  
+    #myskills {
+      text-align: center;
+      position: relative;
+      right: 20px;
+    }
+    #h1-project {
+      text-align: center;
+      border-bottom: 1px solid white;
+      width: 50%;
+      margin: auto;
+      padding: 10px;
+      padding-top: 100px;
+      font-family: sans-serif;
+    }
+  
+    #project-section {
+      height: 400px;
+    }
+  
+    /* contact */
+  
+    #contact {
+      height: 790px;
+    }
+  
+    #h1-contact {
+      text-align: center;
+      width: auto;
+      margin: auto;
+      padding: 10px;
+      padding-top: 160px;
+      font-family: sans-serif;
+      font-size: 45px;
+      color: white;
+    }
+  
+    .contact-desc {
+      text-align: center;
+      margin: auto;
+      width: 60%;
+      font-size: 28px;
+      font-family: sans-serif;
+      padding-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    #hello {
+      text-align: center;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+      position: relative;
+      top: 20px;
+      height: 50px;
+      width: 40%;
+      color: aqua;
+      background-color: #041729;
+      border: 1px solid aqua;
+      border-radius: 5px;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+  
+    b {
+      color: white;
+    }
+  
+    .line-two {
+      font-size: 30px;
+    }
+  
+    #hello:hover {
+      color: aqua;
+      background-color: #0d2e40;
+    }
+  
+    #footer {
+      text-align: center;
+      margin-bottom: 2px;
+      font-family: sans-serif;
+      color: grey;
+      display: relative;
+      margin-top: 510px;
+      font-size: 14px;
+    }
+}
