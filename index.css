@@ -341,12 +341,7 @@ b {
     }
   
     .icon {
-      position: relative;
-      left: 40px;
-      border: 1px solid white;
-      width: 8%;
-      text-align: center;
-      border-radius: 40px;
+      display: none;
     }
   
     #myname {
